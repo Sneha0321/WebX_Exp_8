@@ -1,0 +1,14 @@
+<h2>a) One-way and Two-way Binding</h2>
+<p><strong>One-way:</strong> {{ welcomeMessage }}</p>
+
+<label>Enter your name:</label>
+<input type="text" ng-model="user.name">
+<p><strong>Two-way:</strong> Hello, {{ user.name }}</p>
+
+<label>Mood:</label>
+<select ng-model="user.mood">
+  <option value="😊">😊</option>
+  <option value="😐">😐</option>
+  <option value="😢">😢</option>
+</select>
+<p>You are feeling: {{ user.mood }}</p>

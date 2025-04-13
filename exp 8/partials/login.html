@@ -1,0 +1,11 @@
+<h2>b) Login Page</h2>
+<form name="loginForm" ng-submit="login()" novalidate>
+  <label>Username:</label><br>
+  <input type="text" ng-model="loginData.username" required><br>
+  <label>Password:</label><br>
+  <input type="password" ng-model="loginData.password" required><br>
+  <button type="submit">Login</button>
+</form>
+
+<p class="success" ng-if="loginSuccess">{{ successMessage }}</p>
+<p class="error" ng-if="loginError">{{ errorMessage }}</p>
